@@ -1,0 +1,18 @@
+import * as firebase from 'firebase';
+// Config file
+
+const config = {
+  apiKey: "AIzaSyDpaA53V0XVagQx_t8THSTbxwyXwE2kzPU",
+  authDomain: "prueba-utm.firebaseapp.com",
+  databaseURL: "https://prueba-utm.firebaseio.com",
+  projectId: "prueba-utm",
+  storageBucket: "prueba-utm.appspot.com",
+  messagingSenderId: "665382344341"
+};
+
+export default !firebase.apps.length ? firebase.initializeApp(config) : firebase.app();
+
+//firebase.initializeApp(config);
+
+
+//export default firebase;
